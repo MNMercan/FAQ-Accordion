@@ -22,16 +22,15 @@ main{
 .container{
     position: absolute;
     background-color: hsl(0, 0%, 100%);
-
+    padding: 30px;
     padding-left: 50px;
     padding-right: 50px;
     margin: 10px;
     width: 650px;
-    height:550px;
+    height:max-content;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 /* ------------------Container Header-------------- */
@@ -40,7 +39,7 @@ main{
     display: flex;
     justify-content: start;
     gap: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .container-header > h1{
     font-weight: 700;
@@ -50,15 +49,14 @@ main{
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 25px;
+    gap: 20px;
 }
 
 /* ------------------List & Items-------------- */
 .item-header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .item-header > h3{
     font-weight: 600;
@@ -71,6 +69,15 @@ p{
     font-weight: 400;
     color: rgba(0, 0, 0, .5);
 }
-.close{
+
+
+.list-item.active .item-description{
+    display: block;
+
+}
+
+.item-description{
     display: none;
 }
+
+
