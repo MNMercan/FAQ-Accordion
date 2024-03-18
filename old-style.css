@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+}
+.header{
+   width: 100wh;
+   height: 30vh; 
+   background: url('/assets/images/background-pattern-desktop.svg');
+}
+/* ------------------Main & Container-------------- */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.container{
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 10px;
+    width: 650px;
+    height:600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------Container Header-------------- */
+
+.container-header{
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.container-header > h1{
+    font-weight: 700;
+}
+
+.content-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* ------------------List & Items-------------- */
+.item-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.item-header > h3{
+    font-weight: 600;
+}
+.icon-toggle{
+    cursor: pointer;
+}
+
+p{
+    font-weight: 400;
+    color: rgba(0, 0, 0, .5);
+}
+
+
+.list-item.active .item-description{
+    display: block;
+
+}
+
+.item-description{
+    display: none;
+}
+
+
