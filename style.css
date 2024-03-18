@@ -84,6 +84,8 @@ main {
 }
 
 .list-item .body {
+  border-bottom: 1px solid hsl(292, 16%, 79%);
+  padding-bottom: 10px;
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease;
